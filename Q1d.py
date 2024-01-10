@@ -27,7 +27,7 @@ if __name__ == "__main__":
         y, 
         test_size=0.2, 
         shuffle=True, 
-        random_state=0
+        random_state=10
     )
     
 
@@ -44,14 +44,7 @@ if __name__ == "__main__":
         
         for i in range(run_len):
             
-            x_train, x_test, y_train, y_test = \
-            sklearn.model_selection.train_test_split(
-                x, 
-                y, 
-                test_size=0.2, 
-                shuffle=True, 
-                random_state=i
-            )
+            
         
             mlp = MLPClassifier(
                 hidden_layer_sizes=(feature_cnt,), #one hidden layer with 20 features

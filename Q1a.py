@@ -4,6 +4,7 @@ import sklearn
 import numpy as np
 from IPython import get_ipython
 from sklearn.neural_network import MLPClassifier
+from sklearn.datasets import make_circles
 
 
 
